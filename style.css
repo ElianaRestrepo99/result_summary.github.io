@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900; 1.100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900; 1.100..900&display=swap');
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+ }
+
+ .result_summary{
+    max-width: 46rem;
+    display: grid;
+    border-radius: 2rem;
+ }
+
+.result_card, .summary_card{
+    padding: 2.5rem;
+
+}
+
+ .result_card{
+     background: linear-gradient(hsl(252, 100%, 67%) , hsl(241, 81%, 54%));;
+    text-align: center;
+    color: hsl(241, 100%, 89%);
+    border-radius: 0 0 2rem 2rem;
+    }
+
+.result_card h1{
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.result_score{
+    width: 12rem;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    aspect-ratio: 1 /1;
+    border-radius: 50%;
+    margin-inline: auto;
+    display: grid;
+    place-items: center;
+}
+
+.result_score span{
+    display: block;
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1;
+    color: hsl(221, 100%, 96%);
+}
+
+.result_bank{
+    color: hsl(221, 100%, 96%);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.grid_flow{
+    display: grid;
+    align-content: start;
+    gap: 1rem;  
+}
+
+.summary_card h2{
+    color:  hsl(224, 30%, 27%);
+    margin-bottom: 15px;
+}
+
+.summary_item{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+
+.summary_item p{
+    color: hsl(242, 94%, 79%);
+    font-weight: 800;
+
+}
+
+.summary_item span{
+    color: hsl(224, 30%, 27%);
+}
+
+.flex_group{
+    display: flex;
+    align-items: center;
+    color: hsl(224, 30%, 27%);
+    flex-wrap: wrap;
+    
+}
+
+.summ1{
+    background-color:hsl(0, 78%, 88%);
+}
+
+.summ1 h3{
+    color: hsl(166,100%,37%);
+}
+
+.summ2 {
+    background-color: hsl(39, 83%, 84%);
+    
+}
+
+.summ2 h3{
+    color: hsl(39, 100%, 56%);
+}
+
+.summ3{
+    background-color:hsl(166, 51%, 85%);
+}
+
+.summ3 h3{
+    color:hsl(166, 100%, 37%);
+}
+
+.summ4 {
+    background-color: hsl(233, 58%, 82%);
+}
+
+.summ4 h3{
+    color: hsl(234, 85%, 45%);;
+}
+
+button{
+    color:hsl(221, 100%, 96%);
+    background-color:hsl(224, 30%, 27%);
+    line-height: 1;
+    border: 0;
+    padding: 1rem 2rem;
+    width: 100%;
+    border-radius: 100vw;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+button:hover, button:focus-visible{
+    background-color: hsl(252, 100%, 67%);
+}
+
+@media(min-width:600px){
+    body{
+        min-height: 100hv;
+        display: grid;
+        place-items: center;
+    }
+
+    .result_summary{
+        grid-template-columns: 1fr 1fr;
+        box-shadow: 5rem 1rem 3rem rgba(0, 0, 0, .2);
+        border-radius: 2rem;
+        overflow: hidden;
+        margin-inline: 1rem;
+    }
+
+    .result_card{
+        border-radius: 2rem;
+    }
+
+ }
+
+ 
+
